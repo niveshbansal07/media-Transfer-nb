@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Media Transfer</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>📤 Media Transfer</h1>
+
+    <input type="file" id="fileInput" />
+    <button id="sendBtn">Send File</button>
+
+    <div id="status" class="status"></div>
+
+    <h3>📋 Paste Signal Code (Receiver)</h3>
+    <textarea id="signalBox" placeholder="Paste signal code here..."></textarea>
+    <button id="connectBtn">Connect</button>
+
+    <h4>Your Signal Code:</h4>
+    <pre id="output"></pre>
+
+    <div id="qrCodeBox"></div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/simple-peer@latest/simplepeer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
